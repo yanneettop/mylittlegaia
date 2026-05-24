@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Crystal cleansing ritual still life</title>
+  <desc id="desc">Pearl and cream ritual objects with selenite-like crystal forms and soft moonlight.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdf8"/>
+      <stop offset="0.55" stop-color="#f4eadc"/>
+      <stop offset="1" stop-color="#f7f1e8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#24382f" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="678" cy="140" r="86" fill="#ffffff" opacity="0.82"/>
+  <circle cx="678" cy="140" r="112" fill="none" stroke="#d8c3a5" stroke-opacity="0.25" stroke-width="2"/>
+  <g filter="url(#softShadow)">
+    <rect x="188" y="330" width="472" height="82" rx="41" fill="#ffffff" opacity="0.76"/>
+    <path d="M278 216h54l-22 210h-54Z" fill="#f9f5ea"/>
+    <path d="M352 180h62l-26 246h-62Z" fill="#ffffff" opacity="0.88"/>
+    <path d="M438 236h50l-18 190h-54Z" fill="#f1eadf"/>
+    <circle cx="254" cy="356" r="74" fill="#e8e2d8"/>
+    <circle cx="254" cy="356" r="44" fill="#ffffff" opacity="0.42"/>
+  </g>
+  <path d="M164 462h572" stroke="#24382f" stroke-opacity="0.11" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#c8a96a" stroke-width="3" stroke-linecap="round" opacity="0.7">
+    <path d="M660 330c38 10 66 31 84 64"/>
+    <path d="M694 286c26 24 38 52 36 86"/>
+    <path d="M612 290c24 12 42 30 54 55"/>
+  </g>
+</svg>

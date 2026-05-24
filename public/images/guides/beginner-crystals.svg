@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Beginner crystal collection</title>
+  <desc id="desc">Soft lavender and ivory collection of beginner crystal shapes arranged on a calm surface.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5eefb"/>
+      <stop offset="0.58" stop-color="#fbf7ef"/>
+      <stop offset="1" stop-color="#f7f1e8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#24382f" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="214" cy="132" r="118" fill="#b89bd7" opacity="0.18"/>
+  <circle cx="674" cy="144" r="124" fill="#ffffff" opacity="0.7"/>
+  <g filter="url(#softShadow)">
+    <path d="M210 332c64-58 158-53 214 0-56 58-150 62-214 0Z" fill="#e8b9b4" opacity="0.82"/>
+    <path d="M430 226 526 286 508 430H366l-28-144Z" fill="#d8c4ea"/>
+    <path d="M430 226 466 430H366l-28-144Z" fill="#735c98" opacity="0.2"/>
+    <path d="M612 218h70l-22 212h-72Z" fill="#ffffff" opacity="0.78"/>
+    <path d="M590 354c70-42 142-34 178 18-40 48-124 58-178-18Z" fill="#c8a96a" opacity="0.38"/>
+    <path d="M172 238 246 178l68 68-46 86H188Z" fill="#24382f" opacity="0.24"/>
+  </g>
+  <path d="M154 470h596" stroke="#24382f" stroke-opacity="0.11" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#c8a96a" stroke-width="3" stroke-linecap="round" opacity="0.72">
+    <path d="M730 258l10 18 18 10-18 10-10 18-10-18-18-10 18-10Z"/>
+    <path d="M518 162c24-18 50-26 80-24"/>
+  </g>
+</svg>

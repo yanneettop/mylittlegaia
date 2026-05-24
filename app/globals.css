@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: "Fraunces", "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html, body {
+  background-color: #F7F1E8;
+  color: #252525;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-forest px-7 py-3.5 text-sm font-semibold tracking-wide text-ivory transition-all duration-300 hover:bg-forest/90 hover:shadow-soft active:scale-[0.98];
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-forest/25 bg-transparent px-7 py-3.5 text-sm font-semibold tracking-wide text-forest transition-all duration-300 hover:border-forest hover:bg-forest/5;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-full bg-gold px-7 py-3.5 text-sm font-semibold tracking-wide text-forest transition-all duration-300 hover:bg-gold/90 hover:shadow-glow active:scale-[0.98];
+  }
+  .eyebrow {
+    @apply text-[10px] font-semibold uppercase tracking-[0.34em] text-forest/55;
+  }
+  .h-section {
+    @apply font-serif text-[2rem] leading-[1.02] text-forest sm:text-[2.5rem] md:text-[3rem] tracking-tight;
+  }
+  .card {
+    @apply rounded-3xl border border-forest/10 bg-white/70 p-6 shadow-[0_1px_0_rgba(36,56,47,0.04)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:bg-white hover:shadow-soft;
+  }
+  .card-badge {
+    @apply absolute left-4 top-4 rounded-full bg-white/85 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-forest/70 backdrop-blur;
+  }
+  .card-cta {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.18em] text-forest/70 transition group-hover:text-gold;
+  }
+  .card-cta-arrow {
+    @apply transition-transform group-hover:translate-x-0.5;
+  }
+  .section-pad {
+    @apply py-24 sm:py-32 lg:py-40;
+  }
+}
+
+.sanctuary-wash {
+  background:
+    linear-gradient(135deg, rgba(200, 169, 106, 0.18), transparent 34%),
+    linear-gradient(225deg, rgba(156, 175, 136, 0.18), transparent 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.52), rgba(216, 195, 165, 0.12));
+}
+
+.crystal-facet {
+  clip-path: polygon(50% 0, 88% 24%, 74% 100%, 26% 100%, 12% 24%);
+}
+
+.crystal-point {
+  clip-path: polygon(50% 0, 88% 26%, 70% 100%, 30% 100%, 12% 26%);
+}
+
+.hero-crystal-glow {
+  background:
+    radial-gradient(ellipse at 52% 52%,
+      rgba(207, 184, 232, 0.46) 0%,
+      rgba(247, 241, 232, 0.34) 34%,
+      rgba(200, 169, 106, 0.28) 52%,
+      rgba(247, 241, 232, 0) 75%);
+  filter: blur(42px);
+  mix-blend-mode: screen;
+  animation: crystal-breath-visible 8s ease-in-out infinite;
+}
+
+.hero-particle {
+  opacity: 0;
+  mix-blend-mode: screen;
+  will-change: transform, opacity;
+}
+
+.hero-drift {
+  animation: hero-drift-visible 13s linear infinite;
+}
+
+.hero-drift-2 {
+  animation: hero-drift-visible-2 15s linear infinite;
+}
+
+.hero-drift-3 {
+  animation: hero-drift-visible-3 14s linear infinite;
+}
+
+@keyframes crystal-breath-visible {
+  0%, 100% {
+    opacity: 0.34;
+    transform: translate3d(0, 0, 0) scale(0.96);
+  }
+  50% {
+    opacity: 0.72;
+    transform: translate3d(-1.5%, -1%, 0) scale(1.08);
+  }
+}
+
+@keyframes hero-drift-visible {
+  0% { transform: translate3d(0, 0, 0) scale(0.55); opacity: 0; }
+  10% { opacity: 0.62; }
+  46% { transform: translate3d(24px, -220px, 0) scale(1); opacity: 0.42; }
+  78% { opacity: 0.2; }
+  100% { transform: translate3d(-12px, -430px, 0) scale(0.7); opacity: 0; }
+}
+
+@keyframes hero-drift-visible-2 {
+  0% { transform: translate3d(0, 0, 0) scale(0.5); opacity: 0; }
+  12% { opacity: 0.54; }
+  52% { transform: translate3d(-28px, -260px, 0) scale(1.05); opacity: 0.36; }
+  82% { opacity: 0.18; }
+  100% { transform: translate3d(20px, -460px, 0) scale(0.65); opacity: 0; }
+}
+
+@keyframes hero-drift-visible-3 {
+  0% { transform: translate3d(0, 0, 0) scale(0.6); opacity: 0; }
+  14% { opacity: 0.68; }
+  50% { transform: translate3d(18px, -240px, 0) scale(0.95); opacity: 0.4; }
+  84% { opacity: 0.18; }
+  100% { transform: translate3d(-24px, -440px, 0) scale(0.72); opacity: 0; }
+}
+
+/* Magical accent — animated gold shimmer sweep on inline text */
+.magic-shimmer {
+  background-image: linear-gradient(
+    100deg,
+    #A67A2F 0%,
+    #A67A2F 38%,
+    #F4D58A 50%,
+    #A67A2F 62%,
+    #A67A2F 100%
+  );
+  background-size: 260% 100%;
+  background-position: 180% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: magic-shimmer-sweep 7s ease-in-out infinite;
+  text-shadow: none;
+}
+@keyframes magic-shimmer-sweep {
+  0%, 100% { background-position: 180% 0; }
+  50% { background-position: -40% 0; }
+}
+
+/* Soft halo on hover for product / collection cards */
+.card-halo { position: relative; }
+.card-halo::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: inherit;
+  background: radial-gradient(60% 55% at 50% 38%, rgba(200, 169, 106, 0.42), rgba(200, 169, 106, 0) 72%);
+  opacity: 0;
+  transition: opacity 700ms ease;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(22px);
+}
+.card-halo:hover::before { opacity: 1; }
+
+/* Breathing accent-tinted aura layered on product photography */
+.product-aura {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  opacity: 0.6;
+  animation: aura-breath 9s ease-in-out infinite;
+}
+@keyframes aura-breath {
+  0%, 100% { opacity: 0.38; }
+  50% { opacity: 0.78; }
+}
+
+/* Intention icon: gentle magical pulse on hover */
+.intention-icon {
+  transition: transform 400ms ease, background-color 400ms ease;
+}
+.group:hover .intention-icon {
+  animation: intention-pulse 2s ease-in-out infinite;
+}
+@keyframes intention-pulse {
+  0%, 100% { transform: scale(1) rotate(0deg); box-shadow: 0 0 0 0 rgba(200,169,106,0); }
+  50% { transform: scale(1.08) rotate(4deg); box-shadow: 0 0 24px 4px rgba(200,169,106,0.28); }
+}
+
+/* Drifting motes for ambient sections (e.g. Crystal of the Week) */
+.section-motes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.section-motes span {
+  position: absolute;
+  border-radius: 9999px;
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: section-drift 16s linear infinite;
+  will-change: transform, opacity;
+}
+@keyframes section-drift {
+  0% { transform: translate3d(0, 0, 0) scale(0.5); opacity: 0; }
+  16% { opacity: 0.6; }
+  56% { transform: translate3d(14px, -180px, 0) scale(1); opacity: 0.34; }
+  100% { transform: translate3d(-18px, -360px, 0) scale(0.6); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
