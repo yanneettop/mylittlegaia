@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[slug]","\u002Fcrystal-library\u002F[slug]","\u002Fshop\u002F[slug]","\u002Fshop\u002Fcategory\u002F[slug]","\u002Fshop\u002Fintention\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

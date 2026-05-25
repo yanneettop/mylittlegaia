@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Soft crystal selection still life</title>
+  <desc id="desc">Muted sage and ivory crystal shapes arranged as a calm beginner guide image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbf7ef"/>
+      <stop offset="0.58" stop-color="#eef2e8"/>
+      <stop offset="1" stop-color="#f7f1e8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="34%" cy="36%" r="54%">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#24382f" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <rect width="900" height="600" fill="url(#glow)"/>
+  <circle cx="180" cy="178" r="118" fill="#9caf88" opacity="0.22"/>
+  <circle cx="665" cy="112" r="150" fill="#d8c3a5" opacity="0.18"/>
+  <g filter="url(#softShadow)">
+    <path d="M390 142 526 230 496 430 308 430 270 232Z" fill="#d8c4ea" opacity="0.92"/>
+    <path d="M390 142 432 430 308 430 270 232Z" fill="#735c98" opacity="0.22"/>
+    <path d="M390 142 526 230 432 430Z" fill="#ffffff" opacity="0.32"/>
+    <path d="M546 264 664 323 638 436 506 432 482 322Z" fill="#ffffff" opacity="0.72"/>
+    <path d="M546 264 594 434 506 432 482 322Z" fill="#9caf88" opacity="0.18"/>
+    <path d="M238 328c74-58 176-50 236 20-60 70-162 78-236 20-14-11-14-29 0-40Z" fill="#ffffff" opacity="0.62"/>
+  </g>
+  <path d="M170 468h560" stroke="#24382f" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#c8a96a" stroke-width="3" stroke-linecap="round" opacity="0.74">
+    <path d="M710 330c28-42 58-69 104-78"/>
+    <path d="M758 282c-3-25 5-47 24-66"/>
+    <path d="M762 282c22-2 42 3 59 16"/>
+  </g>
+</svg>

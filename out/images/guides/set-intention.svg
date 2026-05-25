@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+  <title id="title">Crystal intention ritual scene</title>
+  <desc id="desc">Soft blush and sand ritual scene with a crystal, note card and warm candle glow.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fbf1ee"/>
+      <stop offset="0.6" stop-color="#f3e3d5"/>
+      <stop offset="1" stop-color="#f7f1e8"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#24382f" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <circle cx="682" cy="154" r="138" fill="#c9a7a0" opacity="0.16"/>
+  <circle cx="204" cy="145" r="98" fill="#ffffff" opacity="0.58"/>
+  <g filter="url(#softShadow)">
+    <rect x="268" y="246" width="340" height="190" rx="28" fill="#ffffff" opacity="0.72"/>
+    <path d="M330 302h210M330 344h166M330 386h122" stroke="#24382f" stroke-opacity="0.18" stroke-width="7" stroke-linecap="round"/>
+    <path d="M640 248c42 0 76 34 76 76s-34 76-76 76-76-34-76-76 34-76 76-76Z" fill="#f7f1e8"/>
+    <path d="M640 252c18 34 18 78 0 144 42 0 76-32 76-72s-34-72-76-72Z" fill="#c8a96a" opacity="0.24"/>
+    <path d="M220 326 324 268l88 82-68 104H238Z" fill="#e8b9b4" opacity="0.72"/>
+    <path d="M220 326 344 454H238Z" fill="#735c98" opacity="0.12"/>
+  </g>
+  <path d="M164 472h572" stroke="#24382f" stroke-opacity="0.11" stroke-width="3" stroke-linecap="round"/>
+  <g fill="none" stroke="#c8a96a" stroke-width="3" stroke-linecap="round" opacity="0.68">
+    <path d="M720 264l16 28 28 16-28 16-16 28-16-28-28-16 28-16Z"/>
+    <path d="M180 222l8 14 14 8-14 8-8 14-8-14-14-8 14-8Z"/>
+  </g>
+</svg>
