@@ -28,6 +28,11 @@ export default function CheckoutClient() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ items }),
       });
+      if (response.status === 404) {
+        window.location.href = "/checkout/success?demo=1";
+        return;
+      }
+
       const payload = await response.json();
 
       if (!response.ok || !payload.url) {
